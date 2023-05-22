@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "Canvas Assignment Extension",
+    "version": "1.0",
+    "description": "Collect all assignments for courses in Canvas",
+    "content_scripts": [
+      {
+        "matches": ["https://scienceleadership.instructure.com/*"],
+        "js": ["contentScript.js"],
+        "css": ["styles.css"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
